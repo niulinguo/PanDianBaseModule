@@ -1,10 +1,12 @@
-package com.niles.pandian_base;
+package com.niles.pandianbasemodule;
 
 import android.app.Application;
 
+import com.niles.appbase.AppManager;
+
 /**
  * Created by Niles
- * Date 2018/10/12 15:32
+ * Date 2018/10/12 17:59
  * Email niulinguo@163.com
  */
 public class MyApp extends Application {
@@ -12,6 +14,6 @@ public class MyApp extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        PanDianAppManager.init(this, BuildConfig.DEBUG);
+        AppManager.init(this, BuildConfig.DEBUG);
     }
 }
